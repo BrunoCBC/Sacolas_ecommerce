@@ -1,0 +1,21 @@
+Criar um mini e-commerce para um site de sacolas personalizadas
+
+Escolher entre:
+
+-usar framework ou não, ou usar cms(como o wordpress)
+
+Avaliar a melhor forma, levando o seguintes critérios:
+
+-Rapidez de implementação
+-Escabilidade
+-Flexibilidade de personalização
+
+Parte prática:
+
+-Construir o layout da página incial(fazer algo moderno e clean)
+-Na página incial listar os produtos lado a lado, em grid(imagem, titulo, valor, botão de compra)
+-Página individual do produto(titulo, categoria, valor, descrição e imagem)
+-Criar um banco, definir o schema
+-Carrinho simples para adicionar/remover e exibir total
+
+O foco é mais no front-end de inicio e depois o back

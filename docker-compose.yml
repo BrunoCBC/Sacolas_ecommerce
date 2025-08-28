@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: ecommerce_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+
+  php:
+    build: ./api
+    container_name: ecommerce_api
+    restart: always
+    volumes:
+      - ./api:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  front:
+    image: node:18
+    container_name: ecommerce_front
+    working_dir: /app
+    volumes:
+      - ./front:/app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - php

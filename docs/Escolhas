@@ -1,0 +1,23 @@
+# Decisões do Projeto - Sacolas E-commerce
+
+## 1. Front-end: Next.js (React + TypeScript)
+- Moderno e popular no mercado.
+- Facilita criar componentes reutilizáveis (cards, botões, carrinho).
+- Boa integração com APIs.
+- Escalável para futuras funcionalidades.
+- TypeScript adiciona tipagem estática, prevenindo erros e facilitando manutenção.
+
+## 2. Estilização: TailwindCSS
+- Rápido de usar e consistente visualmente.
+- Fácil criar layouts modernos e clean.
+- Flexível, sem depender de templates prontos.
+
+## 3. Back-end: PHP + MySQL
+- PHP é simples e fácil de rodar no Docker.
+- MySQL é confiável e bem suportado.
+- Retorna dados via API para o front.
+
+## 4. Infraestrutura: Docker
+- Evita depender de instalação local (XAMPP, etc).
+- Facilita rodar front, API e banco separados.
+- Ambiente de desenvolvimento consistente.
